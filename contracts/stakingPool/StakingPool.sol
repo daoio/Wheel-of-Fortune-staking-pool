@@ -119,7 +119,7 @@ contract StakingPool {
         Account must hold more than 1% of totalStake
         to participate in distibution of treasury tokens
         OR
-        hold stakingTokens more than 4 weeks;
+        stake stakingTokens more than 4 weeks;
         */
         if (stakeShare < 1 && stakeShare > 0) {
             callsCount[msg.sender] = 0;
