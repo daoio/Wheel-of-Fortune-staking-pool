@@ -30,7 +30,7 @@ contract Treasury {
 
     function withdrawFunds(address payable _winner) external {
         require(_winner == wheelOfF.getWinner(), "You're not the winner");
-        fortuneCoin.transfer(treasuryOwner, fortuneCoin.balanceOf(address(this)));
+        fortuneCoin.transfer(_winner, fortuneCoin.balanceOf(address(this)));
     }
 
     function getTreasuryBalance() external view returns(uint256) {
