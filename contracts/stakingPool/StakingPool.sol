@@ -16,7 +16,7 @@ contract StakingPool {
     of the distribution of tokens from the treasury
     (except for the very first one). And it ends before the distribution,
     at this point users can find out the number
-    of seats they will receive in the new distribution.
+    of places they will receive in the new distribution.
     */
     uint256 public epoch;
     bool public epochStarted;
